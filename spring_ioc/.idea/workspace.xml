@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8246f402-83b8-4068-9d8a-51d8fbcdc83d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\repository" />
+        <option name="mavenHome" value="E:/maven/apache-maven" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2D0fg1n8tbCqrHQFdTo7GJg5B1t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.mir.Test" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.mir" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IOCtestHigh.test08">
+    <configuration name="IOCtestHigh.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.mir.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.mir.Test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mir.Test.IOCtestHigh" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOCtestHigh.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.mir.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.mir.Test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mir.Test.IOCtestHigh" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOCtestHigh.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.mir.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.mir.Test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mir.Test.IOCtestHigh" />
+      <option name="METHOD_NAME" value="test06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOCtestHigh.test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.mir.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.mir.Test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mir.Test.IOCtestHigh" />
+      <option name="METHOD_NAME" value="test07" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOCtestHigh.test08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.mir.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.mir.Test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mir.Test.IOCtestHigh" />
+      <option name="METHOD_NAME" value="test08" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IOCtestHigh.test08" />
+        <item itemvalue="JUnit.IOCtestHigh.test07" />
+        <item itemvalue="JUnit.IOCtestHigh.test06" />
+        <item itemvalue="JUnit.IOCtestHigh.test04" />
+        <item itemvalue="JUnit.IOCtestHigh.test03" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8246f402-83b8-4068-9d8a-51d8fbcdc83d" name="Default Changelist" comment="" />
+      <created>1659841029825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659841029825</updated>
+      <workItem from="1659841032430" duration="116000" />
+      <workItem from="1659842245196" duration="561000" />
+      <workItem from="1659842920182" duration="423000" />
+      <workItem from="1659843400651" duration="71000" />
+      <workItem from="1659845418354" duration="447000" />
+      <workItem from="1659846306347" duration="2496000" />
+      <workItem from="1659848837125" duration="2433000" />
+      <workItem from="1659865917491" duration="15416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1659882054818">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="524" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659882054818" />
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1659846371521">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659846371521" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1659885007780">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659885007780" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1659885007780">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659885007780" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1659885007780">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659885007780" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1659885007780">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659885007780" />
+    <state x="272" y="53" key="SettingsEditor" timestamp="1659848824195">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="272" y="53" key="SettingsEditor/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659848824195" />
+    <state x="461" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1659865916881">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="461" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659865916881" />
+    <state x="178" y="112" key="new project wizard" timestamp="1659846467150">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="178" y="112" key="new project wizard/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659846467150" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1659866001244">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/1920.0.1280.672@0.0.1536.816" timestamp="1659866001244" />
+  </component>
+</project>

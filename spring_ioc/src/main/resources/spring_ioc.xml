@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    name也可设置别名 使用空格 逗号 分号进行分割-->
+<!--    Spring默认调用无参的构造函数-->
+    <bean class="cn.mir.User" id="user" name="user2 user3,user4;user5">
+        <description>用于描述该Bean的作用</description>
+    </bean>
+    <!-- 使用import可以到处其他spring的xml配置文件
+    <import resource="spring_ioc.xml"></import>
+    -->
+    <!-- alias用于设置Bean别名
+    <alias name="user" alias="mir"></alias>-->
+    <!--基于setter方法的依赖注入 -->
+    <bean class="cn.mir.User" id="user6">
+        <property name="id" value="1"></property>
+        <property name="username" value="kris"></property>
+        <property name="loadname" value="mirs"></property>
+    </bean>
+
+    <!-- 基于构造函数-->
+    <!--
+    1.基于name属性设置构造函数参数
+    2.可以只有value属性
+    3.省略name属性 一定要注意参数顺序
+    4.如果参数顺序错乱 可以使用name index
+        index：设置参数下标 从0开始
+        还可使用type：在错乱参数类型一致的情况下不能使用
+    -->
+    <bean class="cn.mir.User" id="user7">
+        <constructor-arg name="id" value="11"></constructor-arg>
+        <constructor-arg name="username" value="kris"></constructor-arg>
+        <constructor-arg name="loadname" value="mirs"></constructor-arg>
+    </bean>
+
+<!--    复杂数据类型的依赖注入-->
+    <bean class="cn.mir.Person" id="person">
+        <property name="id" value="21"></property>
+        <property name="name">
+            <null></null>
+        </property>
+        <property name="gender" value=""></property>
+    <!--引用外部bean的方式
+        <property name="wife" ref="wife"></property>
+     -->
+     <!--    <bean class="cn.mir.Wife" id="wife">-->
+     <!--        <property name="name" value="dlill"></property>-->
+     <!--        <property name="age" value="18"></property>-->
+     <!--    </bean>-->
+     <!-- 引用内部bean -->
+     <property name="wife">
+            <bean class="cn.mir.Wife">
+                <property name="age" value="22"></property>
+                <property name="name" value="ces1"></property>
+            </bean>
+        </property>
+
+
+<!--        list注入
+            如果泛型是基本类型<value>
+            如果泛型是bean <bean>
+-->
+        <property name="hobbies">
+            <list>
+                <value>rap</value>
+                <value>dance</value>
+            </list>
+        </property>
+
+<!--
+        map注入
+        如果value是基本数据类型 <entry key="31" value="java"></entry>
+        如果value是bean <entry value-ref="wife"></entry>>
+-->
+        <property name="course">
+            <map>
+                <entry key="31" value="java"></entry>
+                <entry key="32" value="数据库"></entry>
+            </map>
+        </property>
+    </bean>
+
+<!--
+使用p命名空间简化基于setter属性注入xml配置
+    p命名空间不支持集合 需要额外配置 property
+    设置基本数据类型 或者p:wife-ref 支持引用的外部bean
+-->
+    <bean class="cn.mir.Wife" id="wife" p:age="34" p:name="krisdill"></bean>
+    <bean class="cn.mir.Person" id="person2" p:wife-ref="wife">
+        <property name="hobbies">
+            <list>
+                <value>rap</value>
+                <value>dance</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean class="cn.mir.Wife" id="wife2" c:age="51" c:name="Ckris2"></bean>
+    <bean class="cn.mir.Person" id="person3" p:wife-ref="wife2">
+        <property name="hobbies">
+            <list>
+                <value>rap</value>
+                <value>dance</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

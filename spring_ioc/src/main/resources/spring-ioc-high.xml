@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    控制bean的加载顺序 当一个bea想让另外一个bean在它之前加载可以设置 depends-on-->
+<!--    <bean class="cn.mir.User" id="user" depends-on="wife"></bean>-->
+<!--depends-on    person 依赖 wife wife先加载-->
+
+<!--    <bean class="cn.mir.Wife" id="wife"></bean>-->
+
+<!-- 懒加载 lazy-init
+        控制在使用时加载
+        不会在spring容器加载时 加载该bean
+-->
+<!--    <bean class="cn.mir.Wife" id="wife" lazy-init="true"></bean>-->
+
+
+<!--    作用域 scope
+        singleton 默认值 始终只会创建一次bean
+        prototype 多例（原型） 每次使用都会创建一个bean
+-->
+<!--    <bean class="cn.mir.Person" id="person" scope="prototype"></bean>-->
+
+<!--    使用静态工厂来实例化bean-->
+<!--    <bean class="cn.mir.Person" id="person" factory-method="createPersonFactory"></bean>-->
+
+<!--    使用实例工厂方法实例化-->
+<!--    <bean class="cn.mir.PersonFactory" id="personFactory"></bean>-->
+<!--    <bean class="cn.mir.Person" id="person2" factory-method="createPersonFactoryMethod" factory-bean="personFactory"></bean>-->
+
+<!--    自动注入
+        autowire=
+        byType 根据类型自动匹配  当出现多个类型或者匹配到类型则会报错
+        byName 根据set方法的名字去匹配
+        constructor  根据构造器去匹配
+            优先根据名字 然后根据参数类型（默认byName）
+            会根据构造函数的参数进行完整的匹配注入：如果构造函数的参数Person(Wife wife2，User name)  ioc 容器里必须要同时由wife2 user
+            名字没有匹配到会根据类型匹配 类型假如出现多个会注入失败但是不会报错
+            当类型匹配到多个 可以使用
+            1.设置某个bean为主要bean primary="true"
+            2.其他不需要注入的可以设置 autowire-candidate="false" 忽略自动注入
+
+-->
+<!--    <bean class="cn.mir.Person" id="person2" autowire="byType"></bean>-->
+<!--&lt;!&ndash;    primary 主要注入&ndash;&gt;-->
+<!--    <bean class="cn.mir.Wife" id="wife">-->
+<!--        <property name="name" value="lily"></property>-->
+<!--    </bean>-->
+<!--    <bean class="cn.mir.Wife" id="wife2" autowire-candidate="false">-->
+<!--        <property name="name" value="lily2"></property>-->
+<!--    </bean>-->
+<!--    <bean class="cn.mir.User" id="user" autowire-candidate="false"></bean>-->
+
+<!--    bean的生命周期回调-->
+<!--    <bean class="cn.mir.Person" id="person2"></bean>-->
+<!--基于配置的生命周期配置-->
+<!--    <bean class="cn.mir.Person" id="person2" init-method="initByConfig" destroy-method="destroyByConfig"></bean>-->
+
+<!--    配置第三方bean-->
+    <bean class="com.alibaba.druid.pool.DruidDataSource" id="dataSource">
+        <property name="username" value="${mysql.username}"></property>
+        <property name="password" value="${mysql.password}"></property>
+        <property name="url" value="${mysql.url}/demo"></property>
+        <property name="driverClassName" value="${mysql.driverClassName}"></property>
+    </bean>
+
+<!--    引用外部属性资源文件-->
+    <context:property-placeholder  location="db.properties"></context:property-placeholder>
+</beans>
