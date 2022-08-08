@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    @Controller  标记在控制层的类注册为Bean主键
+        @Service     标记在业务逻辑层的类注册为Bean主键
+        @Repository  标记在业务逻辑层的类注册为Bean主键
+        @Component   标记非三层的普通的类注册为Bean主键
+
+        不是非要每个层对应相应的注解：
+            1.增强可读性
+            2.利于spring管理
+-->
+<!--    <bean class="cn.Mir.Controller.UserController" id="userController"></bean>-->
+
+<!--    设置包的扫描
+        base-package 设置需要扫描的包
+        排除扫描    context:exclude-filter 设置需要排除扫描的选项
+        包含扫描    context:include-filter 设置需要包含扫描的选项
+        type：
+            1.annotation 默认 根据注解的完整限定名设置排除\包含
+            2.assignable      根据类的完整限定名设置排除\包括
+
+            3.aspect    org.example..*Service+ 根据切面表达式设置排除\包括   一般不会使用
+            4.regex     org\.example\.Default.* 根据正则表达式设置排除\包括
+            5.custom    根据接口来设置排除\包括      org.springframework.core.type.TypeFilter接口的自定义实现
+
+       use-default-filters 默认true，会默认扫描@Controller @Service  @Repository  @Component
+
+       将一个类注册为Bean的步骤：
+       1.设置扫描包  context:component-scan
+       2.对应的类名加上对应的注解
+
+       使用上面注解会自动将类名的首字母设置为Bean的名字
+-->
+<!--    <context:component-scan base-package="cn.Mir" use-default-filters="false">-->
+<!--        &lt;!&ndash; 排除Controller注解&ndash;&gt;-->
+<!--        <context:exclude-filter type="assignable" expression="cn.Mir.Controller.UserController"/>-->
+<!--    </context:component-scan>-->
+
+    <context:component-scan base-package="cn.Mir"></context:component-scan>
+</beans>
